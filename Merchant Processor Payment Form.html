@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merchant Processor Payment Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: black">
+        <div class="container">
+                <div class="panel panel-default" style="background-color: rgb(238, 27, 27)">
+                    <h1 style="text-align:center" class="mt-4"style="font-family: 'Times New Roman', Times, serif">DVD Registration Application</h1>
+                    <p></p>
+                  </div>
+                </div>
+            <div class="container">
+        
+                  <div class="panel panel-default" style="background-color: orange">
+                      
+                  <div class="btn-toolbar">
+            <button type="submit" onclick="location.href = 'Home.html';" class="btn btn-default btn-lg" style="background-color: rgb(64, 197, 86)">Home</button>
+            <button type="submit" onclick="location.href = 'Login.html';" class="btn btn-default btn-lg" style="background-color: rgb(64, 197, 86)">User Login</button>
+            <button type="submit" onclick="location.href = 'Product.html';" class="btn btn-default btn-lg" style="background-color: rgb(64, 197, 86)">Product</button>
+            <button type="submit" onclick="location.href = 'Ordering.html';" class="btn btn-default btn-lg" style="background-color: rgb(64, 197, 86)">Ordering</button>
+            <button type="submit" onclick="location.href = 'Downloads.html';" class="btn btn-default btn-lg" style="background-color: rgb(64, 197, 86)">Downloads</button>
+            <button type="submit" onclick="location.href = 'Support.html';" class="btn btn-default btn-lg" style="background-color: rgb(64, 197, 86)">Support</button>
+            <button type="submit" onclick="location.href = 'Catalog.html';" class="btn btn-default btn-lg" style="background-color: rgb(64, 197, 86)">Catalog</button> <img src="https://www.elby.ch/img/logo/logo-clonedvd.svg"  class="center-block img-responsive img-fluid" alt="">
+            
+          </div>
+              </div>
+              </div>
+<div class="panel panel-default" style="background-color:orange">
+        <h1 style="text-align:center">Merchant Processor Payment Form</h1>
+</div>
+    <div class="panel panel-default" style="background-color: orange">
+    
+        <div class="container">
+                <div class='row'>
+                    <div class='col-md-4'></div>
+                    <div class='col-md-4'>
+                      <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
+                      <form accept-charset="UTF-8" action="/" class="require-validation" data-cc-on-file="false" data-stripe-publishable-key="pk_bQQaTxnaZlzv4FnnuZ28LFHccVSaj" id="payment-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓" /><input name="_method" type="hidden" value="PUT" /><input name="authenticity_token" type="hidden" value="qLZ9cScer7ZxqulsUWazw4x3cSEzv899SP/7ThPCOV8=" /></div>
+                        <div class='form-row'>
+                          <div class='col-xs-12 form-group required'>
+                            <label class='control-label'>Name on Card</label>
+                            <input class='form-control' size='4' type='text'>
+                          </div>
+                        </div>
+                        <div class='form-row'>
+                          <div class='col-xs-12 form-group card required'>
+                            <label class='control-label'>Card Number</label>
+                            <input autocomplete='off' class='form-control card-number' size='20' type='text'>
+                          </div>
+                        </div>
+                        <div class='form-row'>
+                          <div class='col-xs-4 form-group cvc required'>
+                            <label class='control-label'>CVC</label>
+                            <input autocomplete='off' class='form-control card-cvc' placeholder='ex. 311' size='4' type='text'>
+                          </div>
+                          <div class='col-xs-4 form-group expiration required'>
+                            <label class='control-label'>Expiration</label>
+                            <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'>
+                          </div>
+                          <div class='col-xs-4 form-group expiration required'>
+                            <label class='control-label'> </label>
+                            <input class='form-control card-expiry-year' placeholder='YYYY' size='4' type='text'>
+                          </div>
+                        </div>
+                        <div class='form-row'>
+                          <div class='col-md-12'>
+                            <div class='form-control total btn btn-info' style="background-color: rgb(238, 27, 27)">
+                              Total:
+                              <span class='amount'>$300</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='form-row'>
+                          <div class='col-md-12 form-group'>
+                            <button class='form-control btn btn-primary submit-button' type='submit' onclick="location.href= 'Payment Successfull.html';" style="background-color: rgb(64, 197, 86)" onclick="location.href = 'Pay Successfull.html';">Pay »</button>
+                          </div>
+                        </div>
+                        <div class='form-row'>
+                          <div class='col-md-12 error form-group hide'>
+                            <div class='alert-danger alert'>
+                              Please correct the errors and try again.
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class='col-md-4'></div>
+                </div>
+            </div>
+            </div>
+            <img src="https://store-images.s-microsoft.com/image/apps.16545.13908522288417399.470731b9-67c7-4ea1-b8b3-eb2561ef2ccf.3f210cc5-ee45-40d3-bce9-448402aae03e?w=162&h=162&q=90&mode=crop"  class="center-block img-responsive img-fluid" alt="">
+            <footer>
+                    <div class="footer-copyright text-center py-3" style="color: white">© 2019 Copyright:
+                            <a href="https://cdn3.vectorstock.com/i/1000x1000/77/72/hand-showing-middle-finger-up-you-or-off-vector-10917772.jpg"> DVDRegister.com</a>
+                          </div>
+            </footer>
+</body>
+</html>
